@@ -1,0 +1,57 @@
+## Arquivos Binários
+bin/
+obj/
+out/
+
+## Arquivos de Configurações de IDE e Editor
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.ds_store
+*.idea/
+
+## Arquivos de Build
+_ReSharper*/
+*.ReSharper
+*.[Cc]ache
+*.[Cc]ache
+*.[Rr]es
+*.[Ss]uo
+*.[Tt]mp
+*.[Vv]spscc
+*.builds
+*.pidb
+*.svclog
+*.scc
+
+## Pacotes
+packages/
+*.nupkg
+!**/packages/build/
+!**/packages/content/
+!**/packages/tools/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Ferramentas
+*.log
+TestResults/
+
+## Arquivos de Projeto
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+## Outros
+.DS_Store
+Azure Web App publicação perfil
+*.publishsettings
+
+## Arquivos específicos do ASP.NET
+wwwroot/
+*.rdb

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{BBB08029-0382-4A25-98B8-96CC8B9596A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrogPay.Api", "src\FrogPay.Api\FrogPay.Api.csproj", "{8BD494B6-B9FC-4798-B9E4-8DDB7337BD3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{D3C679C1-DA71-4F74-A674-2484D18172C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infrastructure", "2 - Infrastructure", "{75777CB8-BA09-4B93-87FC-61C41431EE64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrogPay.Data", "src\FrogPay.Data\FrogPay.Data.csproj", "{915AE015-7390-473A-9A64-6D9103F93EFE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrogPay.Application", "src\FrogPay.Application\FrogPay.Application.csproj", "{13881395-BA4A-45DD-85C5-169A22AE04A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrogPay.Domain", "src\FrogPay.Domain\FrogPay.Domain.csproj", "{86A68173-493B-4EF0-80D1-8B280844EB49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BD494B6-B9FC-4798-B9E4-8DDB7337BD3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD494B6-B9FC-4798-B9E4-8DDB7337BD3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD494B6-B9FC-4798-B9E4-8DDB7337BD3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD494B6-B9FC-4798-B9E4-8DDB7337BD3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{915AE015-7390-473A-9A64-6D9103F93EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{915AE015-7390-473A-9A64-6D9103F93EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{915AE015-7390-473A-9A64-6D9103F93EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{915AE015-7390-473A-9A64-6D9103F93EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13881395-BA4A-45DD-85C5-169A22AE04A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13881395-BA4A-45DD-85C5-169A22AE04A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13881395-BA4A-45DD-85C5-169A22AE04A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13881395-BA4A-45DD-85C5-169A22AE04A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86A68173-493B-4EF0-80D1-8B280844EB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86A68173-493B-4EF0-80D1-8B280844EB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86A68173-493B-4EF0-80D1-8B280844EB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86A68173-493B-4EF0-80D1-8B280844EB49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BD494B6-B9FC-4798-B9E4-8DDB7337BD3E} = {BBB08029-0382-4A25-98B8-96CC8B9596A0}
+		{915AE015-7390-473A-9A64-6D9103F93EFE} = {75777CB8-BA09-4B93-87FC-61C41431EE64}
+		{13881395-BA4A-45DD-85C5-169A22AE04A4} = {D3C679C1-DA71-4F74-A674-2484D18172C9}
+		{86A68173-493B-4EF0-80D1-8B280844EB49} = {D3C679C1-DA71-4F74-A674-2484D18172C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {292FBCFE-F8CD-48A5-845D-6185F3813642}
+	EndGlobalSection
+EndGlobal
