@@ -1,4 +1,6 @@
 ﻿using FrogPay.Data.Context;
+using FrogPay.Data.Repositories;
+using FrogPay.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +13,11 @@ namespace FrogPay.Data
         {
             var connectionString = configuration.GetConnectionString("Default");
             services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(connectionString));
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IPessoaRepository, PessoaRepository>();
+
         }
+
     }
 }
