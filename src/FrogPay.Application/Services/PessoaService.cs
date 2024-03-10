@@ -36,11 +36,11 @@ namespace FrogPay.Application.Services
             var pessoasDTO = _mapper.Map<List<PessoaResponse>>(pessoas);
 
             return new PaginationResponse<PessoaResponse>
-            {
-                PageNumber = pageNumber,
-                PageSize = pageSize,
-                Items = pessoasDTO
-            };
+            (
+                PageNumber: pageNumber,
+                PageSize: pageSize,
+                Items: pessoasDTO
+            );
         }
 
         public async Task<PessoaResponse> GetByIdAsync(Guid id, CancellationToken cancellationToken)

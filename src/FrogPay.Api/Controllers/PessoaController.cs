@@ -9,6 +9,7 @@ namespace FrogPay.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class PessoaController : ControllerBase
     {
         private readonly IPessoaService _pessoaService;

@@ -11,6 +11,8 @@ namespace FrogPay.Data.Context
         public DbSet<Loja> Lojas { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<DadosBancario> DadosBancarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +22,7 @@ namespace FrogPay.Data.Context
             modelBuilder.LojaConfigure();
             modelBuilder.EnderecoConfigure();
             modelBuilder.DadosBancarioConfigure();
+            modelBuilder.UsuarioConfigure();
         }
     }
 }

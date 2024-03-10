@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\FrogPay.Auth\FrogPay.Auth.csproj" />
     <ProjectReference Include="..\FrogPay.Application\FrogPay.Application.csproj" />
     <ProjectReference Include="..\FrogPay.Data\FrogPay.Data.csproj" />
   </ItemGroup>

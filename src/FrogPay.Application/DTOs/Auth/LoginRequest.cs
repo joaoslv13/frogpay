@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FrogPay.Application.DTOs
+namespace FrogPay.Application.DTOs.Auth
 {
-    public record PaginationRequest(int PageNumber = 1, int PageSize = 10);
-
+    public record LoginRequest(string Login, string Senha);
 }
