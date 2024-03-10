@@ -16,8 +16,8 @@ namespace FrogPay.Api.Controllers
             _authService = authService;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<string>> Create([FromBody] LoginRequest loginRequest, CancellationToken cancellationToken)
+        [HttpPost("login")]
+        public async Task<ActionResult<string>> Login([FromBody] LoginRequest loginRequest, CancellationToken cancellationToken)
         {
             var token = await _authService.LoginAsync(loginRequest, cancellationToken);
             return Ok(token);
