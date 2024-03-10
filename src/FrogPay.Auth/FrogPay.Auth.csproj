@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\FrogPay.Application\FrogPay.Application.csproj" />
+    <ProjectReference Include="..\FrogPay.Application\FrogPay.Application.csproj" />
   </ItemGroup>
 
 </Project>

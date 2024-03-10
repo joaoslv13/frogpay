@@ -2,7 +2,7 @@
 using FrogPay.Application.DTOs.Pessoa;
 using FrogPay.Application.Shared;
 
-namespace FrogPay.Application.Validators
+namespace FrogPay.Application.Validators.Pessoa
 {
     public class PessoaRequestValidator : AbstractValidator<PessoaRequest>
     {
@@ -14,6 +14,7 @@ namespace FrogPay.Application.Validators
 
             RuleFor(x => x.Cpf)
                 .NotEmpty().WithMessage("O Cpf é obrigatório.")
+                .NotNull().WithMessage("O Cpf é obrigatório.")
                 .Must(CpfValidator.IsValid!).WithMessage("Cpf inválido");
 
             RuleFor(x => x.DataNascimento)

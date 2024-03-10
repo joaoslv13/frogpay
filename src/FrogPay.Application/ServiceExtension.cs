@@ -2,14 +2,8 @@
 using FrogPay.Application.Interfaces;
 using FrogPay.Application.Services;
 using FrogPay.Application.Shared.Notifications;
-using FrogPay.Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FrogPay.Application
 {
@@ -22,6 +16,7 @@ namespace FrogPay.Application
             services.AddScoped<INotificationHandler, NotificationHandler>();
 
             services.AddScoped<IPessoaService, PessoaService>();
+            services.AddScoped<ILojaService, LojaService>();
 
         }
     }

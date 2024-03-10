@@ -3,7 +3,6 @@ using FrogPay.Application.DTOs.Pessoa;
 using FrogPay.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Data;
 
 namespace FrogPay.Api.Controllers
 {

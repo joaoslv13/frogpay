@@ -10,7 +10,7 @@
 
         public string? Cnpj { get; set; }
 
-        public DateTime DataAbertura { get; set; }
+        public DateOnly DataAbertura { get; set; }
 
 
     }

@@ -7,5 +7,4 @@ using System.Threading.Tasks;
 namespace FrogPay.Application.DTOs
 {
     public record PaginationRequest(int PageNumber = 1, int PageSize = 10);
-
 }
