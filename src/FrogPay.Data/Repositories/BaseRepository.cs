@@ -49,6 +49,7 @@ namespace FrogPay.Data.Repositories
             var skip = (pageNumber - 1) * pageSize;
 
             return await Context.Set<T>()
+                .Where(w => !w.IsDeleted)
                 .OrderBy(o => o.CreatedDate)
                 .Skip(skip)
                 .Take(pageSize)

@@ -13,7 +13,8 @@ namespace FrogPay.Application.Mappers
     {
         public PessoaMapper()
         {
-                CreateMap<Pessoa, PessoaResponse>().ReverseMap();
+            CreateMap<Pessoa, PessoaResponse>().ReverseMap();
+            CreateMap<Pessoa, PessoaRequest>().ReverseMap();
         }
     }
 }

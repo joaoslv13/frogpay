@@ -20,8 +20,4 @@
     <ProjectReference Include="..\FrogPay.Data\FrogPay.Data.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>

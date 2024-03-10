@@ -20,7 +20,8 @@ namespace FrogPay.Data.Configuration
                 .IsRequired();
 
             modelBuilder.Entity<Pessoa>()
-                .Property(x => x.DataNascimento)                
+                .Property(x => x.DataNascimento)  
+                .HasColumnType("date")
                 .IsRequired();
         }
     }

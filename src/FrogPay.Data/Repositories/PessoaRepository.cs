@@ -1,11 +1,7 @@
 ﻿using FrogPay.Data.Context;
 using FrogPay.Domain.Entities;
 using FrogPay.Domain.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace FrogPay.Data.Repositories
 {
@@ -13,5 +9,10 @@ namespace FrogPay.Data.Repositories
     {
         public PessoaRepository(AppDbContext context) : base(context)
         { }
+
+        public async Task<bool> HasExist(string cpf)
+        {
+            return await Context.Pessoas.Where(w => w.Cpf == cpf).AnyAsync();
+        }
     }
 }

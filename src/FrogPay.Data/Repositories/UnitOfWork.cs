@@ -1,4 +1,6 @@
-﻿using FrogPay.Domain.Interfaces;
+﻿using FrogPay.Data.Context;
+using FrogPay.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +11,16 @@ namespace FrogPay.Data.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
+        private readonly AppDbContext _context;
 
-        public Task Commit(CancellationToken cancellationToken)
+        public UnitOfWork(AppDbContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
+        }
+
+        public async Task Commit(CancellationToken cancellationToken)
+        {
+            await _context.SaveChangesAsync(cancellationToken);
         }
     }
 }
