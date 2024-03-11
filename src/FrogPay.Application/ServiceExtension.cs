@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using FrogPay.Application.DTOs.Endereco;
 using FrogPay.Application.Interfaces;
 using FrogPay.Application.Services;
 using FrogPay.Application.Shared.Notifications;
@@ -18,6 +19,7 @@ namespace FrogPay.Application
             services.AddScoped<IPessoaService, PessoaService>();
             services.AddScoped<ILojaService, LojaService>();
             services.AddScoped<IDadosBancariosService, DadosBancariosService>();
+            services.AddScoped<IEnderecoService, EnderecoService>();
 
         }
     }

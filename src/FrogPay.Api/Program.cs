@@ -7,7 +7,6 @@ using FrogPay.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
-using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,7 +34,6 @@ builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
 
-    // Configurar a autenticação Bearer
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Description = "Autenticação JWT usando o esquema Bearer. Exemplo: \"Authorization: Bearer { token }\"",

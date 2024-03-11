@@ -9,6 +9,5 @@ namespace FrogPay.Application.Validators.DadosBancarios
         {
 
         }
-
     }
 }
