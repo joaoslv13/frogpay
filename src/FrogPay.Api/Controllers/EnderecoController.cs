@@ -8,6 +8,7 @@ namespace FrogPay.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class EnderecoController : ControllerBase
     {
         private readonly IEnderecoService _enderecoService;
