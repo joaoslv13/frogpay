@@ -11,6 +11,7 @@ namespace FrogPay.Application.Interfaces
     public interface IEnderecoService
     {
         Task<PaginationResponse<EnderecoResponse>> GetByIdPessoaAsync(Guid idPessoa, int pageNumber, int pageSize, CancellationToken cancellationToken);
+        Task<PaginationResponse<EnderecoResponse>> GetByNomePessoaAsync(string nomePessoa, int pageNumber, int pageSize, CancellationToken cancellationToken);
         Task<PaginationResponse<EnderecoResponse>> GetAllAsync(int pageNumber, int pageSize, CancellationToken cancellationToken);
 
         Task<EnderecoResponse?> CreateAsync(EnderecoRequest enderecoDTO, CancellationToken cancellationToken);

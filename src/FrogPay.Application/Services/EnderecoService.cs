@@ -38,6 +38,18 @@ namespace FrogPay.Application.Services
                 Items: enderecosDTO
             );
         }
+        public async Task<PaginationResponse<EnderecoResponse>> GetByNomePessoaAsync(string nomePessoa, int pageNumber, int pageSize, CancellationToken cancellationToken)
+        {
+            var enderecos = await _enderecoRepository.GetByNomePessoa(nomePessoa, pageNumber, pageSize, cancellationToken);
+            var enderecosDTO = _mapper.Map<List<EnderecoResponse>>(enderecos);
+
+            return new PaginationResponse<EnderecoResponse>
+            (
+                PageNumber: pageNumber,
+                PageSize: pageSize,
+                Items: enderecosDTO
+            );
+        }
 
         public async Task<EnderecoResponse?> CreateAsync(EnderecoRequest enderecoDTO, CancellationToken cancellationToken)
         {

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FrogPay.Api.Controllers
 {
+    [ApiController]
+    [Route("api/[controller]")]
     public class EnderecoController : ControllerBase
     {
         private readonly IEnderecoService _enderecoService;
@@ -29,10 +31,17 @@ namespace FrogPay.Api.Controllers
             return Ok(response);
         }
 
-        [HttpGet("GetByPessoa/{idPessoa}")]
+        [HttpGet("GetByIdPessoa/{idPessoa}")]
         public async Task<ActionResult<PaginationResponse<EnderecoResponse>>> GetByIdPessoa([FromRoute] Guid idPessoa, [FromQuery] PaginationRequest pagination, CancellationToken cancellationToken)
         {
             var response = await _enderecoService.GetByIdPessoaAsync(idPessoa, pagination.PageNumber, pagination.PageSize, cancellationToken);
+            return Ok(response);
+        }
+
+        [HttpGet("GetByNomePessoa/{nomePessoa}")]
+        public async Task<ActionResult<PaginationResponse<EnderecoResponse>>> GetByNomePessoa([FromRoute] string nomePessoa, [FromQuery] PaginationRequest pagination, CancellationToken cancellationToken)
+        {
+            var response = await _enderecoService.GetByNomePessoaAsync(nomePessoa, pagination.PageNumber, pagination.PageSize, cancellationToken);
             return Ok(response);
         }
 

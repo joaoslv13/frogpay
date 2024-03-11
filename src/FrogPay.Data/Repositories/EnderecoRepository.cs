@@ -25,12 +25,18 @@ public class EnderecoRepository : BaseRepository<Endereco>, IEnderecoRepository
             .Take(pageSize)
             .ToListAsync(cancellationToken);
     }
-
     public async Task<List<Endereco>> GetByNomePessoa(string nomePessoa, int pageNumber, int pageSize, CancellationToken cancellationToken)
     {
+        var skip = (pageNumber - 1) * pageSize;
+
         return await Context.Enderecos
             .Include(e => e.Pessoa)
-            .Where(w => EF.Functions.Like(w.Pessoa!.Nome, $"%{nomePessoa}%"))
+            .Where(e => e.Pessoa != null && e.Pessoa.Nome!.ToLower().Contains(nomePessoa.ToLower()))
+            .OrderBy(o => o.CreatedDate)
+            .Skip(skip)
+            .Take(pageSize)
             .ToListAsync(cancellationToken);
     }
+
+
 }
