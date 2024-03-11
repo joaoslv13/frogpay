@@ -1,6 +1,6 @@
 ﻿namespace FrogPay.Domain.Entities
 {
-    public sealed class DadosBancario : BaseEntity
+    public sealed class DadosBancarios : BaseEntity
     {
         public Guid PessoaId { get; set; }
         public Pessoa? Pessoa { get; set; }

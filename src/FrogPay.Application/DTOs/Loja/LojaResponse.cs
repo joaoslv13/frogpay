@@ -9,6 +9,4 @@
         DateOnly DataAbertura,
         DateTime CreatedDate,
         DateTime UpdatedDate);
-
-
 }

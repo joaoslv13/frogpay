@@ -17,6 +17,7 @@ namespace FrogPay.Application
 
             services.AddScoped<IPessoaService, PessoaService>();
             services.AddScoped<ILojaService, LojaService>();
+            services.AddScoped<IDadosBancariosService, DadosBancariosService>();
 
         }
     }

@@ -1,17 +1,3 @@
-using AutoMapper;
-using FrogPay.Api.Controllers;
-using FrogPay.Application.DTOs.Pessoa;
-using FrogPay.Application.Interfaces;
-using FrogPay.Application.Mappers;
-using FrogPay.Application.Services;
-using FrogPay.Application.Shared.Notifications;
-using FrogPay.Data.Context;
-using FrogPay.Data.Repositories;
-using FrogPay.Domain.Interfaces;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Moq;
-
 namespace FrogPay.Application.Tests
 {
     public class Tests

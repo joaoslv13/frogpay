@@ -40,7 +40,7 @@ namespace FrogPay.Application.Services
 
             if (pessoa == null)
             {
-                _notificationHandler.AddNotification(new Notification("Loja não encontrada.", NotificationLevel.Error));
+                _notificationHandler.AddNotification(new Notification("Pessoa não encontrada.", NotificationLevel.Error));
                 return null;
             }
 
@@ -94,7 +94,7 @@ namespace FrogPay.Application.Services
 
             var loja = _mapper.Map<Loja>(lojaDTO);
 
-            var pessoa = _pessoaService.GetByIdAsync(loja.PessoaId, cancellationToken);
+            var pessoa = await _pessoaService.GetByIdAsync(loja.PessoaId, cancellationToken);
 
             if (pessoa == null)
             {

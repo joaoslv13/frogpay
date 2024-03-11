@@ -1,1 +1,11 @@
 global using NUnit.Framework;
+global using FrogPay.Application.DTOs.Pessoa;
+global using FrogPay.Application.Interfaces;
+global using FrogPay.Application.Mappers;
+global using FrogPay.Application.Services;
+global using FrogPay.Application.Shared.Notifications;
+global using FrogPay.Data.Context;
+global using FrogPay.Data.Repositories;
+global using FrogPay.Domain.Interfaces;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.DependencyInjection;

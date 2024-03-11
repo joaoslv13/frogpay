@@ -10,7 +10,7 @@ namespace FrogPay.Data.Context
         public DbSet<Pessoa> Pessoas { get; set; }
         public DbSet<Loja> Lojas { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
-        public DbSet<DadosBancario> DadosBancarios { get; set; }
+        public DbSet<DadosBancarios> DadosBancarios { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
 
 

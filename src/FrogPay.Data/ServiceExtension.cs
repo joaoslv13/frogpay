@@ -18,6 +18,7 @@ namespace FrogPay.Data
             services.AddScoped<IPessoaRepository, PessoaRepository>();
             services.AddScoped<ILojaRepository, LojaRepository>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+            services.AddScoped<IDadosBancariosRepository, DadosBancariosRepository>();
 
         }
     }
