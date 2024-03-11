@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrogPay.Domain", "src\FrogP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrogPay.Auth", "src\FrogPay.Auth\FrogPay.Auth.csproj", "{EFFA8E82-BB07-428F-8CCA-8EDD1A8E33C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Tests", "3 - Tests", "{C5340C4A-AE83-4290-9BB6-95005C7DF46A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrogPay.Application.Tests", "src\FrogPay.Application.Tests\FrogPay.Application.Tests.csproj", "{55FB3BC1-09DF-42A7-A8D3-35FEC56028AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{EFFA8E82-BB07-428F-8CCA-8EDD1A8E33C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFFA8E82-BB07-428F-8CCA-8EDD1A8E33C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFFA8E82-BB07-428F-8CCA-8EDD1A8E33C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55FB3BC1-09DF-42A7-A8D3-35FEC56028AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55FB3BC1-09DF-42A7-A8D3-35FEC56028AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55FB3BC1-09DF-42A7-A8D3-35FEC56028AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55FB3BC1-09DF-42A7-A8D3-35FEC56028AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{13881395-BA4A-45DD-85C5-169A22AE04A4} = {D3C679C1-DA71-4F74-A674-2484D18172C9}
 		{86A68173-493B-4EF0-80D1-8B280844EB49} = {D3C679C1-DA71-4F74-A674-2484D18172C9}
 		{EFFA8E82-BB07-428F-8CCA-8EDD1A8E33C2} = {75777CB8-BA09-4B93-87FC-61C41431EE64}
+		{55FB3BC1-09DF-42A7-A8D3-35FEC56028AD} = {C5340C4A-AE83-4290-9BB6-95005C7DF46A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {292FBCFE-F8CD-48A5-845D-6185F3813642}

@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 
 namespace FrogPay.Application.Services
 {
-    internal class PessoaService : IPessoaService
+    public class PessoaService : IPessoaService
     {
         private readonly IMapper _mapper;
         private readonly IPessoaRepository _pessoaRepository;
